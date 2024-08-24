@@ -229,3 +229,7 @@ body {
 .inputs-login input:hover{
   border: 2px solid #777;
 }
+
+.inputs-login input:focus{
+  border: 2px solid #777;
+}
