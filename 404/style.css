@@ -32,10 +32,113 @@ body {
   width: 100%;
   height: 10%;
   display: flex;
+}
+
+.top-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding-left: 25px;
+  position: relative;
+}
+
+.icon-logo i {
+  color: #58af9c;
+  font-size: 25px;
+}
+
+.icon-logo-two {
+  color: #b1e4d9;
+  font-size: 25px;
+  position: absolute;
+  left: 35px;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon-logo-two p {
+  font-weight: bold;
+  color: #58af9c;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  transition: all 0.5s ease;
+}
+
+.icon-logo-two p:hover {
+  border-bottom: 2px solid #428677;
+}
+
+.forest {
+  color: #58af9c;
+  text-decoration: none;
+}
+
+.top-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
   align-items: center;
 }
 
+/* Menu */
+.menu-left {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-left a {
+  text-decoration: none;
+  color: #58af9c;
+  font-weight: bold;
+  padding: 5px 10px;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  transition: all 0.5s ease;
+}
+
+.menu-left a:hover {
+  border-bottom: 2px solid #428677;
+  color: #428677;
+}
+
+.search-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100px;
+}
+
+.search-icon i {
+  width: 30%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  color: #919393;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.search-icon i:hover {
+  border-bottom: 2px solid #428677;
+  /* background-color: #b1e4d9;
+  color: #ecf0f1; */
+}
+
+/* Estilização do meio */
 .meio {
   display: flex;
   width: 100%;
@@ -62,13 +165,13 @@ body {
   align-items: center;
 }
 
-.card-right{
+.card-right {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
 
-.card-right .card-text{
+.card-right .card-text {
   background-color: #58af9c;
   color: #fff;
   padding: 5px;
@@ -78,12 +181,88 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
+.card-buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+#back-to {
+  height: 30px;
+  border: none;
+  border-radius: 7px;
+  background-color: #58af9c;
+  color: #fff;
+  padding: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#back-to:hover {
+  background-color: #428677;
+}
+
+#visit {
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  color: #58af9c;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+#visit:hover {
+  border: 2px solid #58af9c;
+  border-radius: 7px;
+  background-color: #b3eade;
+}
+
+/* Estilização do rodapé */
 .footer {
   width: 100%;
   height: 10%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
+}
+
+.footer-text{
+  width: 50%;
+  height: 100%;
+  color:#6d7674;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 0 15px;
+}
+
+.footer-text a{
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: #6d7674;
+}
+
+.footer-text a i{
+  font-size: 25px;
+  transition: all 0.5s ease;
+  padding-right: 10px;
+}
+
+.icon-social{
+  display: flex;
+  gap: 10px;
+}
+
+.footer-text a i:hover{
+  color: #428677;
 }
