@@ -1,0 +1,262 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.header {
+  width: 100%;
+  height: 10%;
+  display: flex;
+}
+
+.header .logo {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  gap: 10px;
+  font-size: 20px;
+  color: #58af9c;
+}
+
+.header .logo i {
+  font-size: 40px;
+}
+
+.header .search {
+  width: 60%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding-left: 10px;
+}
+
+.search-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 5px;
+  gap: 10px;
+  font-size: 20px;
+  transition: all 0.5s ease;
+}
+
+.search-content:hover {
+  border: 2px solid #428677;
+  border-radius: 10px;
+}
+
+.search-content input {
+  width: 100%;
+  border: transparent;
+  outline: none;
+  color: #6d7674;
+}
+
+.search-content i {
+  font-size: 16px;
+  color: #58af9c;
+}
+
+.header .info {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding-right: 10px;
+}
+
+.info .icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.info .icons i {
+  color: #428677;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.info .icons .notifications {
+  position: relative;
+}
+
+.info .icons .notifications span {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: #f00;
+  color: #ffffff;
+  font-size: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.header .info .icons img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.main {
+  width: 100%;
+  height: 90%;
+  background-color: #F9FAFB;
+  display: flex;
+}
+
+/* Menu */
+
+.main .menu {
+  width: 20%;
+  height: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+li .link-menu {
+  display: flex;
+  gap: 20px;
+}
+
+li .link-menu {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 10px;
+  gap: 10px;
+  transition: all 0.5s ease;
+}
+
+.main .menu .menu-content .link-menu:hover {
+  background-color: #f3f5f4;
+}
+
+.main .menu .menu-content .link-menu.active {
+  background-color: #f3f5f4;
+}
+
+.main .menu .menu-content a {
+  text-decoration: none;
+  color: #6d7674;
+}
+
+.main .menu .menu-content i {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #58af9c;
+  font-size: 20px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons button{
+  width: 150px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  background-color: #58af9c;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.buttons button:hover{
+  background-color: #428677;
+}
+
+/* Conteúdo */
+
+.content{
+  margin: 15px;
+  width: 100%;
+  height: 95%;
+  /* background-color: #58af9c;
+  border: 1px solid #000; */
+  border-radius: 10px;
+}
+
+.content .content-text {
+  width: 100%;
+  height: 50px;
+  background-color: #58af9c;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 30px;
+}
+
+.content .content-text .text{
+  display: flex;
+  gap: 10px;
+}
+
+/* Cards */
+
+.cards{
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  background-color: #6d7674;
+}
+
+.cards .card-content{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border: 1px solid #6d7674;
+  border-radius: 10px;
+}
+
+.cards .card-content .card-icon{
+  font-size: 50px;
+  color: #58af9c;
+}
