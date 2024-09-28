@@ -267,6 +267,7 @@ body {
   color: #428677;
 }
 
+/* Responsividade */
 @media (max-width: 600px){
 
   .container{
