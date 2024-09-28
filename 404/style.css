@@ -266,3 +266,52 @@ body {
 .footer-text a i:hover{
   color: #428677;
 }
+
+@media (max-width: 600px){
+
+  .container{
+    width: 90%;
+    height: 100vh;
+  }
+
+  .left{
+    display: none;
+  }
+
+  .right{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .top-left{
+    width: 20%;
+  }
+
+  .top-right{
+    width: 80%;
+  }
+
+  .menu-left{
+    width: 100%;
+    font-size: 11px;
+    gap: 5px;
+  }
+
+  .menu-left a{
+    padding: 5px 5px;
+  }
+
+  .search-icon, .forest{
+    display: none;
+  }
+
+  #back-to, #visit{
+    height: 100%;
+  }
+
+  .footer-text{
+    width: 100%;
+
+  }
+  
+}
